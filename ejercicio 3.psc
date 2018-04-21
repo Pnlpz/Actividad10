@@ -1,20 +1,15 @@
 Algoritmo Numeros_Primos
     
-	Escribir "Escribe un numero: "
+	Escribir "Escribe un numero"
 	Leer num
-	Contador<-0
-	i<-1
-	Mientras i <= num Hacer
-		Si num - 1 == 0 Entonces
-			contador = contador + 1
+	
+	n<-2
+	Mientras n<num Hacer
+		Si num % n == 0 Entonces
+			Escribir "No es numero primo"
+		SiNo
+			Escribir "Es primo"
 		Fin Si
-		i = i + 1
-		
 	Fin Mientras
 	
-    Si contador <= 2 y (num % 2 != 0) Entonces 
-		Escribir "Es numero primo"
-	SiNo
-		Escribir "No es numero primo"
-	Fin Si
 FinProceso
